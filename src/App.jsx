@@ -6,11 +6,14 @@ import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
-    <div className="mt-16 ">
+    <div className="mt-4 ">
       <Profile />
-      {/* <Tech />
+      <hr className="mx-4 mt-12 "></hr>
+      <Tech />
+      <hr className="mx-4 mt-12"></hr>
       <Projects />
-      <Contact /> */}
+      <hr className="mx-4 "></hr>
+      <Contact />
     </div>
   );
 }
