@@ -1,40 +1,16 @@
-import React from "react";
-import profile from "../../assets/images/image-profile-mobile.webp";
-function Profile() {
+import React from 'react'
+
+function Footer() {
   return (
-    <div className=" w-full overflow-x-hidden">
-      {/* rings and circle+profile box */}
-      <div className="grid grid-cols-[30%_70%] max-h-[15rem] md:flex">
-        {/* Rings */}
-        <div className="">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="530"
-            height="129"
-            className=" mt-16 translate-x-[-60%] translate-y-[40%] 
-            md:mt-0  md:translate-x-[0%] md:translate-y-[0%]"
-          >
-            <g fill="none" fillRule="evenodd" stroke="#FFF" opacity=".25">
-              <ellipse cx="265" cy="40" rx="264.5" ry="39.5" />
-              <ellipse cx="265" cy="52" rx="264.5" ry="39.5" />
-              <ellipse cx="265" cy="65" rx="264.5" ry="39.5" />
-              <ellipse cx="265" cy="77" rx="264.5" ry="39.5" />
-              <ellipse cx="265" cy="89" rx="264.5" ry="39.5" />
-            </g>
-          </svg>
-        </div>
-        {/* profile box and circle */}
-        <div className="flex justify ">
-          {/* profile box and profile pic */}
-          <div className="flex flex-col items-center bg-gray-900 w-[20rem]">
+    <div className='py-16 bg-gray-900  '>
             {/* profile box */}
-            <div className="  flex flex-col ">
+            <div className=" ">
               {" "}
               <h1 className=" text-white font-bold text-2xl text-center mb-8">
                 adamakeyes
               </h1>
               {/* Social media */}
-              <div className="flex space-x-5 mb-[-8rem]">
+              <div className="flex justify-center space-x-7 ">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24">
                   <path
                     fill="white"
@@ -63,62 +39,9 @@ function Profile() {
                 </svg>
               </div>
             </div>
-            {/* Profile pic */}
-            <img
-              src={profile}
-              alt="xx"
-              className="max-h-[27rem]  w-full object-cover "
-            />
-          </div>
-          {/* Circle */}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="129"
-            height="129"
-            className="translate-x-8  overflow-x-hidden translate-y-[210%]"
-          >
-            <circle
-              cx="830.5"
-              cy="585.5"
-              r="64"
-              fill="none"
-              stroke="#FFF"
-              transform="translate(-766 -521)"
-            />
-          </svg>
-        </div>
-      </div>
-      {/* content */}
-      <div className="px-2 pt-28 mb-8">
-        <div>
-          <h1 className="text-white text-center text-[40px] mt-20">
-            Nice to meet you!
-          </h1>
-          <h1 className="text-white text-center text-[40px] ">
-            I'm{" "}
-            <span className="underline decoration-green-300	 underline-offset-[0.6rem]">
-              {" "}
-              Adam Keyes.
-            </span>
-          </h1>
-        </div>
-        <div className="my-4">
-          <p className="text-gray-400 text-center font-semibold">
-            Based in the UK. I'm a front-end developer passionate about building
-            accessible web apps that users love.
-          </p>
-        </div>
-        <div className="my-8">
-          <h1
-            className="uppercase text-white text-center tracking-[0.20rem] 
-          underline decoration-green-300 underline-offset-[1.2rem] decoration-2"
-          >
-            Contact me
-          </h1>
-        </div>
-      </div>
+           
     </div>
-  );
+  )
 }
 
-export default Profile;
+export default Footer
