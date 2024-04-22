@@ -4,32 +4,19 @@ import { Link, NavLink } from "react-router-dom";
 
 function Projects() {
   return (
-    <div className="mx-4 overflow-x-hidden">
+    <div className="mx-4 overflow-x-hidden mt-20 md:mx-6">
       {/* Rings */}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="530"
-        height="129"
-        style={{ transform: "translateX(30%) translateY(-50%)" }}
-        className=""
-      >
-        <g fill="none" fillRule="evenodd" stroke="#FFF" opacity=".25">
-          <ellipse cx="265" cy="40" rx="264.5" ry="39.5" />
-          <ellipse cx="265" cy="52" rx="264.5" ry="39.5" />
-          <ellipse cx="265" cy="65" rx="264.5" ry="39.5" />
-          <ellipse cx="265" cy="77" rx="264.5" ry="39.5" />
-          <ellipse cx="265" cy="89" rx="264.5" ry="39.5" />
-        </g>
-      </svg>
+     
       <div className="flex justify-between text-white pb-9">
-        <h1 className="text-3xl font-bold ">Projects</h1>
+        <h1 className="text-3xl font-bold md:text-6xl ">Projects</h1>
         <h4
           className="text-md font-semibold underline decoration-green-300	 
-        underline-offset-[0.8rem] tracking-widest uppercase cursor-pointer"
+        underline-offset-[0.8rem] tracking-widest uppercase cursor-pointer md:mt-4"
         >
           Contact me
         </h4>
       </div>
+      <div className="md:grid md:grid-cols-[1fr,1fr] md:space-x-6">
       {ProjectData.map((item, idx) => {
         return (
           <div className="mb-14" key={idx}>
@@ -69,6 +56,7 @@ function Projects() {
           </div>
         );
       })}
+      </div>
     </div>
   );
 }

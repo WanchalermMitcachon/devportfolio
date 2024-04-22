@@ -2,9 +2,9 @@ import React from "react";
 
 function Contact() {
   return (
-    <div className="px-3 py-14 bg-gray-900">
+    <div className="px-3 py-14 bg-gray-800">
       {/* Content */}
-      <div className="space-y-8">
+      <div className="space-y-8 md:mx-[12rem]">
         <h1 className="text-white text-center font-bold text-4xl ">Contact</h1>
         <p className="text-gray-300 text-center font-semibold">
           I would love to hear about your project and how I could help. Please
@@ -12,7 +12,7 @@ function Contact() {
         </p>
       </div>
       {/* Form */}
-      <div className="mt-14 space-y-12">
+      <div className="mt-14 space-y-12 md:mx-[12rem]">
         <div className="">
           <input
             type="text"
@@ -44,8 +44,7 @@ function Contact() {
             xmlns="http://www.w3.org/2000/svg"
             width="530"
             height="129"
-            style={{ transform: "translateX(-70%) translateY(-50%)" }}
-            className=""
+            className="translate-x-[-18rem] translate-y-[-3rem] md:translate-x-[-32rem] md:translate-y-[1rem]"
           >
             <g fill="none" fillRule="evenodd" stroke="#FFF" opacity=".25">
               <ellipse cx="265" cy="40" rx="264.5" ry="39.5" />

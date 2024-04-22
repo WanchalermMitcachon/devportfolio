@@ -2,9 +2,9 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='py-16 bg-gray-900  '>
+    <div className='py-16  bg-gray-800 md:py-8   md:px-8'>
             {/* profile box */}
-            <div className=" ">
+            <div className="md:flex md:justify-between">
               {" "}
               <h1 className=" text-white font-bold text-2xl text-center mb-8">
                 adamakeyes
