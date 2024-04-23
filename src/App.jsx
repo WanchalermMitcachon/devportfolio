@@ -14,7 +14,7 @@ function App() {
       <hr className="mx-4 mt-[-20%] md:hidden"></hr>
       <Projects />
       <Contact />
-      <hr className="mx-4 md:mx-8"></hr>
+      <hr className="mx-4 md:mx-8 lg:mx-24"></hr>
       <Footer/>
     </div>
   );

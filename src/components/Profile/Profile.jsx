@@ -16,6 +16,7 @@ function Profile() {
     : isDesktop
     ? profileDesktop // เพิ่มเงื่อนไขสำหรับ Desktop
     : profileMobile; // เลือกรูปโปรไฟล์โดย default
+
   return (
     <div className=" w-full overflow-x-hidden md:overflow-x-auto md:relative md:h-[30rem]  ">
       {/* rings and circle+profile box */}
@@ -114,7 +115,7 @@ function Profile() {
           </h1>
           <p className="text-white text-center text-[40px] mt-20  md:text-start md:text-[52px] md:mt-7">
             Nice to meet you! <span> </span>
-            <span className="text-white text-center text-[40px] block md:inline md:text-[52px]	md:text-start">
+            <span className="text-white text-center text-[40px] block md:inline md:text-[52px]	md:text-start lg:block">
               I'm{" "}
               <span
                 className="underline decoration-green-300	 underline-offset-[0.6rem] md:text-start 
@@ -134,8 +135,13 @@ function Profile() {
         </div>
         <div className="my-8">
           <h1
-            className="uppercase text-white text-center tracking-[0.20rem] 
+            className="uppercase cursor-pointer text-white text-center tracking-[0.20rem] 
           underline decoration-green-300 underline-offset-[1.2rem] decoration-2 md:text-start lg:pt-10"
+            onClick={() => {
+              document
+                .getElementById("contact")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
           >
             Contact me
           </h1>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='py-16  bg-gray-800 md:py-8   md:px-8'>
+    <div className='py-16  bg-[#263238] md:py-8   md:px-8 lg:px-24'>
             {/* profile box */}
             <div className="md:flex md:justify-between">
               {" "}

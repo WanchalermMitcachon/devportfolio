@@ -1,7 +1,15 @@
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('./assets//fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+    /* ตัวอย่างเฉพาะเนื้อหา font อื่น ๆ ที่คุณต้องการใช้ */
+  }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body{
     background-color: black;
+    font-family: 'SpaceGrotesk', sans-serif;
+
 }
