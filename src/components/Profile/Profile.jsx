@@ -1,7 +1,7 @@
 import React from "react";
 import profileMobile from "../../assets/images/image-profile-mobile.webp";
 import profileTablet from "../../assets/images/image-profile-tablet.webp";
-import profileDesktop from "../../assets/images/profileyoo.jpg";
+import profileDesktop from "../../assets/images/image-profile-desktop.webp";
 
 function Profile() {
   // ตรวจสอบขนาดของหน้าจอ
@@ -87,7 +87,7 @@ function Profile() {
             <img
               src={profilePicSrc}
               alt="xx"
-              className="h-[380px] w-full z-0 md:h-[500px] object-fill md:object-fill "
+              className="h-[300px] mt-14 w-full z-0 md:h-[500px] object-fill md:object-fill md:mt-0 "
             />
           </div>
           {/* Circle */}
@@ -95,7 +95,7 @@ function Profile() {
             xmlns="http://www.w3.org/2000/svg"
             width="129"
             height="129"
-            className="translate-x-8 overflow-x-hidden translate-y-[254px] md:absolute md:right-[-2rem] md:top-11 lg:right-[90%] lg:top-0 "
+            className="translate-x-8 overflow-x-hidden translate-y-[230px] md:absolute md:right-[-2rem] md:top-11 lg:right-[90%] lg:top-0 "
           >
             <circle
               cx="830.5"
