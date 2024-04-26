@@ -8,8 +8,8 @@ export default function Tech() {
       {TechData.map((item, idx) => {
         return (
           <div className="my-6 space-y-2 md:mx-8">
-            <h1 className="text-white text-3xl font-bold text-center md:text-start">{item.skill}</h1>
-            <h4 className="text-gray-300 font-bold text-center md:text-start">{item.year} Years Experience</h4>
+            <h1 className="text-white text-[32px] font-bold text-center md:text-start md:text-[48px]">{item.skill}</h1>
+            <h4 className="text-gray-300 text-center md:text-start">{item.year} Years Experience</h4>
           </div>
         );
       })}

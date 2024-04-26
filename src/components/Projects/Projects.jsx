@@ -8,10 +8,10 @@ function Projects() {
       {/* Rings */}
 
       <div className="flex justify-between text-white pb-9">
-        <h1 className="text-3xl font-bold md:text-6xl ">Projects</h1>
+        <h1 className="text-[40px] font-bold md:text-6xl ">Projects</h1>
         <h4
-          className="text-md cursor-pointer font-semibold underline decoration-green-300	 
-        underline-offset-[0.8rem] tracking-widest uppercase cursor-pointer md:mt-4"
+          className="text-md cursor-pointer font-bold underline decoration-green-300	 
+        underline-offset-[0.8rem] tracking-widest uppercase cursor-pointer mt-2 md:mt-4"
           onClick={() => {
             document
               .getElementById("contact")
@@ -48,12 +48,12 @@ function Projects() {
               <div className="flex space-x-6 text-white">
                 <Link to={item.website} target="_blank">
                   {" "}
-                  <h3 className="text-lg font-semibold tracking-widest underline decoration-green-400 underline-offset-[1rem] decoration-2 uppercase">
+                  <h3 className=" font-bold tracking-widest underline decoration-green-400 underline-offset-[1rem] decoration-2 uppercase">
                     view project
                   </h3>
                 </Link>
                 <Link to={item.github} target="_blank">
-                  <h3 className="text-lg font-semibold tracking-widest underline decoration-green-400 underline-offset-[1rem] decoration-2 uppercase">
+                  <h3 className=" font-bold tracking-widest underline decoration-green-400 underline-offset-[1rem] decoration-2 uppercase">
                     View code
                   </h3>
                 </Link>

@@ -6,7 +6,7 @@ function Footer() {
             {/* profile box */}
             <div className="md:flex md:justify-between">
               {" "}
-              <h1 className=" text-white font-bold text-2xl text-center mb-8">
+              <h1 className=" text-white font-bold text-[32px] text-center mb-8">
                 adamakeyes
               </h1>
               {/* Social media */}

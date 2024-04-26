@@ -1,7 +1,8 @@
 import React from "react";
 import profileMobile from "../../assets/images/image-profile-mobile.webp";
 import profileTablet from "../../assets/images/image-profile-tablet.webp";
-import profileDesktop from "../../assets/images/image-profile-desktop.webp";
+import profileDesktop from "../../assets/images/profileyoo.jpg";
+
 function Profile() {
   // ตรวจสอบขนาดของหน้าจอ
   const isMobile = window.matchMedia("(max-width: 768px)").matches;
@@ -18,9 +19,9 @@ function Profile() {
     : profileMobile; // เลือกรูปโปรไฟล์โดย default
 
   return (
-    <div className=" w-full overflow-x-hidden md:overflow-x-auto md:relative md:h-[30rem]  ">
+    <div className=" w-full overflow-x-hidden md:overflow-hidden md:relative md:h-[30rem]  ">
       {/* rings and circle+profile box */}
-      <div className="grid grid-cols-[30%_70%] max-h-[15rem] md:grid-cols-[55%_45%] md:grid-cols-[60%_40%] ">
+      <div className="grid grid-cols-[30%_70%]  max-h-[15rem] md:grid-cols-[55%_45%] ">
         {/* Rings */}
         <div className="">
           <svg
@@ -40,19 +41,19 @@ function Profile() {
           </svg>
         </div>
         {/* profile box and circle */}
-        <div className="flex justify-center md:justify-end md:relative md:overflow-x-hidden lg:overflow-x-visible lg:mx-24">
-          {/* profile box and profile pic */}
-          <div className="flex flex-col items-center bg-gray-900 md:w-full ">
+        <div className="flex justify-center md:justify-end md:relative md:overflow-x-hidden md:h-full lg:overflow-x-visible lg:mx-24">
+          {/* profile box and profilse pic */}
+          <div className="flex flex-col items-center bg-gray-900  w-[174px] md:w-full"> 
             {/* profile box */}
-            <div className="flex flex-col ">
+            <div className="flex flex-col z-50">
               {" "}
-              <h1 className=" text-white font-bold text-2xl text-center mb-8 md:hidden ">
+              <h1 className=" text-white font-bold text-2xl text-center mb-8 pt-6 md:hidden ">
                 adamakeyes
               </h1>
               {/* Social media */}
               <div
-                className="flex  space-x-5 mb-[-8rem]   
-              md:absolute md:top-10 md:right-112 md:space-x-6 md:mb-0 lg:right-[6%] "
+                className="flex space-x-5 mb-[-8rem]  
+              md:absolute md:top-10 md:right-[1rem] md:space-x-6 md:mb-0 lg:right-[6%] "
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24">
                   <path
@@ -86,7 +87,7 @@ function Profile() {
             <img
               src={profilePicSrc}
               alt="xx"
-              className="max-h-[27rem] w-full object-fill md:h-[30rem] md:object-fill "
+              className="h-[380px] w-full z-0 md:h-[500px] object-fill md:object-fill "
             />
           </div>
           {/* Circle */}
@@ -94,7 +95,7 @@ function Profile() {
             xmlns="http://www.w3.org/2000/svg"
             width="129"
             height="129"
-            className="translate-x-8 overflow-x-hidden translate-y-[210%] md:absolute md:right-[-2rem] md:top-8 lg:right-[90%] lg:top-0 "
+            className="translate-x-8 overflow-x-hidden translate-y-[254px] md:absolute md:right-[-2rem] md:top-11 lg:right-[90%] lg:top-0 "
           >
             <circle
               cx="830.5"
@@ -108,12 +109,12 @@ function Profile() {
         </div>
       </div>
       {/* content */}
-      <div className="px-2 pt-28 mb-8  md:pt-0 md:absolute md:top-0 md:left-0 md:w-[55%] md:mx-4 lg:mx-24 ">
-        <div className="md:flex md:flex-col ">
-          <h1 className="hidden md:block font-bold text-white pt-12">
+      <div className="px-2 pt-28 mb-8  md:pt-0 md:absolute md:top-0 md:left-0 md:w-[60%] md:mx-4 lg:mx-24 ">
+        <div className="md:flex md:flex-col leading-10	">
+          <h1 className="hidden md:block md:text-[32px] md:pt-6 font-bold text-[40px] text-white pt-12">
             adamakeyes
           </h1>
-          <p className="text-white text-center text-[40px] mt-20  md:text-start md:text-[52px] md:mt-7">
+          <p className="text-white text-center text-[40px] mt-20  md:text-start md:text-[72px] md:mt-14 md:leading-[60px] lg:text-[88px] lg:leading-[75px]">
             Nice to meet you! <span> </span>
             <span className="text-white text-center text-[40px] block md:inline md:text-[52px]	md:text-start lg:block">
               I'm{" "}
@@ -127,16 +128,16 @@ function Profile() {
             </span>
           </p>
         </div>
-        <div className="my-4 md:flex md:flex-wrap md:text-wrap md:mb-8 lg:w-[60%]">
-          <p className="text-gray-400 text-center font-semibold md:text-start ">
+        <div className="my-4 mx-2 md:flex md:flex-wrap md:text-wrap md:mb-8 lg:w-[60%]">
+          <p className="text-gray-400 text-center font-semibold md:text-start md:w-[90%]">
             Based in the UK. I'm a front-end developer passionate about building
             accessible web apps that users love.
           </p>
         </div>
-        <div className="my-8">
+        <div className="my-8 ">
           <h1
             className="uppercase cursor-pointer text-white text-center tracking-[0.20rem] 
-          underline decoration-green-300 underline-offset-[1.2rem] decoration-2 md:text-start lg:pt-10"
+          underline decoration-green-300 underline-offset-[1.2rem] decoration-2 font-bold md:text-start lg:pt-10"
             onClick={() => {
               document
                 .getElementById("contact")
