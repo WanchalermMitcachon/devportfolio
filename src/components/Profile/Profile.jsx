@@ -52,7 +52,7 @@ function Profile() {
               </h1>
               {/* Social media */}
               <div
-                className="flex space-x-3 ml-1 md:ml-0  mb-[-8rem]  
+                className="flex space-x-3 ml-1  mb-[-8rem]  md:ml-0  
               md:absolute md:top-10 md:right-[1rem] md:space-x-6 md:mb-0 lg:right-[6%] "
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24">
