@@ -82,7 +82,7 @@ function Contact() {
             placeholder="NAME"
           />
           {errors.name && (
-            <p className="text-red-500 text-sm ml-6">{errors.name}</p>
+            <p className="text-red-500 text-sm text-end">{errors.name}</p>
           )}
         </div>
         <div>
@@ -97,7 +97,7 @@ function Contact() {
             placeholder="EMAIL"
           />
           {errors.email && (
-            <p className="text-red-500 text-sm ml-6">{errors.email}</p>
+            <p className="text-red-500 text-sm text-end">{errors.email}</p>
           )}
         </div>
         <div>
@@ -111,13 +111,13 @@ function Contact() {
             placeholder="MESSAGE"
           />
           {errors.message && (
-            <p className="text-red-500 text-sm  ml-6">{errors.message}</p>
+            <p className="text-red-500 text-sm  text-end ">{errors.message}</p>
           )}
         </div>
         <div className="mt-[-5rem] mb-8 mx-2 flex justify-end  md:-[5rem] lg:mt-8 lg:flex lg:justify-end">
           <button
             type="submit"
-            className="text-white uppercase underline decoration-green-300 underline-offset-[0.8rem] tracking-widest font-bold decoration-2 cursor-pointer md:mx-0"
+            className="text-white uppercase underline decoration-green-300 underline-offset-[0.8rem] tracking-widest font-bold decoration-2 cursor-pointer hover:text-green-300 md:mx-0"
           >
             Send Message
           </button>

@@ -137,7 +137,7 @@ function Profile() {
         <div className="my-8 ">
           <h1
             className="uppercase cursor-pointer text-white text-center tracking-[0.20rem] 
-          underline decoration-green-300 underline-offset-[1.2rem] decoration-2 font-bold md:text-start lg:pt-10"
+          underline decoration-green-300 underline-offset-[1.2rem] decoration-2 font-bold hover:text-green-300 md:text-start lg:pt-10"
             onClick={() => {
               document
                 .getElementById("contact")

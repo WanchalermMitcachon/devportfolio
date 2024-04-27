@@ -11,7 +11,7 @@ function Projects() {
         <h1 className="text-[40px] font-bold md:text-6xl ">Projects</h1>
         <h4
           className="text-md cursor-pointer font-bold underline decoration-green-300	 
-        underline-offset-[0.8rem] tracking-widest uppercase cursor-pointer mt-2 md:mt-4"
+        underline-offset-[0.8rem] tracking-widest uppercase cursor-pointer mt-2 hover:text-green-300 md:mt-4"
           onClick={() => {
             document
               .getElementById("contact")
