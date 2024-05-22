@@ -55,7 +55,7 @@ function Contact() {
 
   return (
     <div
-      className="px-3  py-14 bg-[#263238] lg:grid lg:grid-cols-[50%_50%] lg:px-24 "
+      className="px-3 py-14 bg-[#263238] lg:grid lg:grid-cols-[50%_50%] lg:px-24 "
       id="contact"
     >
       {/* Content */}
@@ -69,7 +69,10 @@ function Contact() {
         </p>
       </div>
       {/* Form */}
-      <form onSubmit={handleSubmit} className="mt-14 space-y-12 md:w-[60%] md:ml-[12rem]">
+      <form
+        onSubmit={handleSubmit}
+        className="mt-14 space-y-12 md:w-[60%] md:ml-[12rem]"
+      >
         <div>
           <input
             type="text"
@@ -125,7 +128,7 @@ function Contact() {
             xmlns="http://www.w3.org/2000/svg"
             width="530"
             height="129"
-            className="absolute translate-x-[-50%] translate-y-[-95%] md:translate-x-[-70%] md:translate-y-[-95%] lg:translate-x-[-190%] lg:translate-y-[-95%]"
+            className="absolute translate-x-[-50%] translate-y-[-95%] md:translate-x-[-70%] md:translate-y-[-95%] lg:translate-x-[-110%] lg:translate-y-[-95%] "
           >
             <g fill="none" fillRule="evenodd" stroke="#FFF" opacity=".25">
               <ellipse cx="265" cy="40" rx="264.5" ry="39.5" />

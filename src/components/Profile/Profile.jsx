@@ -43,7 +43,7 @@ function Profile() {
         {/* profile box and circle */}
         <div className="flex justify-center md:justify-end md:relative md:overflow-x-hidden md:h-full lg:overflow-x-visible lg:mx-24">
           {/* profile box and profilse pic */}
-          <div className="flex flex-col items-center bg-gray-900  w-[174px] md:w-full"> 
+          <div className="flex flex-col items-center bg-gray-900  w-[174px] translate-x-[-25%] md:translate-x-0 md:w-full">
             {/* profile box */}
             <div className="flex flex-col z-50">
               {" "}
@@ -87,7 +87,7 @@ function Profile() {
             <img
               src={profilePicSrc}
               alt="xx"
-              className="h-[300px] mt-14 w-full z-0 md:h-[500px] object-fill md:object-fill md:mt-0 "
+              className="h-[300px]  mt-14 w-full z-0 md:h-[500px] object-fill md:object-fill md:mt-0 "
             />
           </div>
           {/* Circle */}
@@ -129,7 +129,7 @@ function Profile() {
           </p>
         </div>
         <div className="my-4 mx-2 md:flex md:flex-wrap md:text-wrap md:mb-8 lg:w-[60%]">
-          <p className="text-gray-400 text-center font-semibold md:text-start md:w-[90%]">
+          <p className="text-gray-400 text-center font-semibold px-[5rem] md:text-start md:w-[90%] md:px-0">
             Based in the UK. I'm a front-end developer passionate about building
             accessible web apps that users love.
           </p>
