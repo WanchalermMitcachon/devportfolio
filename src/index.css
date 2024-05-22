@@ -12,11 +12,18 @@
 body {
   background-color: black;
   font-family: "SpaceGrotesk", sans-serif;
-  margin: auto;
   display: flex;
-  max-width: 1500px;
+  flex-direction: center;
+  max-width: 1300px;
+  margin: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-
 }
 
+@media screen and (max-width: 1280px) {
+  body {
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+}

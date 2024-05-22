@@ -43,7 +43,7 @@ function Profile() {
         {/* profile box and circle */}
         <div className="flex justify-center md:justify-end md:relative md:overflow-x-hidden md:h-full lg:overflow-x-visible lg:mx-24">
           {/* profile box and profilse pic */}
-          <div className="flex flex-col items-center bg-gray-900  w-[174px] translate-x-[-25%] md:translate-x-0 md:w-full">
+          <div className="flex flex-col items-center bg-gray-900  w-[174px]  md:w-full">
             {/* profile box */}
             <div className="flex flex-col z-50">
               {" "}
