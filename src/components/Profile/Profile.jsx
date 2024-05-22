@@ -129,7 +129,7 @@ function Profile() {
           </p>
         </div>
         <div className="my-4 mx-2 md:flex md:flex-wrap md:text-wrap md:mb-8 lg:w-[60%]">
-          <p className="text-gray-400 text-center font-semibold px-[5rem] md:text-start md:w-[90%] md:px-0">
+          <p className="text-gray-400 text-center font-semibold px-[1.5rem] md:text-start md:w-[90%] md:px-0">
             Based in the UK. I'm a front-end developer passionate about building
             accessible web apps that users love.
           </p>
